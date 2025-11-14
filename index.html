@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Agencia de Publicidad líder con más de 5 millones de usuarios. Ofrecemos servicios de marketing digital, desarrollo web, aplicaciones Android, SEO y cursos.">
+    <meta name="keywords" content="agencia publicidad, marketing digital, desarrollo web, aplicaciones android, SEO, posicionamiento web, cursos digitales, WhatsApp, Telegram">
+    <meta name="author" content="Agencia de Publicidad">
+    <title>Agencia de Publicidad | Marketing Digital, Desarrollo Web y SEO</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agenciadepublicidad.site/">
+    <meta property="og:title" content="Agencia de Publicidad | Marketing Digital, Desarrollo Web y SEO">
+    <meta property="og:description" content="Llegamos a más de 5 millones de usuarios. Servicios de marketing, desarrollo web, apps Android, SEO y cursos.">
+    <meta property="og:image" content="https://agenciadepublicidad.site/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agenciadepublicidad.site/">
+    <meta property="twitter:title" content="Agencia de Publicidad | Marketing Digital, Desarrollo Web y SEO">
+    <meta property="twitter:description" content="Llegamos a más de 5 millones de usuarios. Servicios de marketing, desarrollo web, apps Android, SEO y cursos.">
+    <meta property="twitter:image" content="https://agenciadepublicidad.site/images/twitter-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://agenciadepublicidad.site/favicon.ico">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2C3E50;
+            --secondary: #E74C3C;
+            --accent: #3498DB;
+            --light: #ECF0F1;
+            --dark: #2C3E50;
+            --text: #333333;
+            --text-light: #7F8C8D;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--secondary);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background-color: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background-color: #2980b9;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-menu li {
+            margin-left: 30px;
+        }
+        
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .nav-menu a:hover {
+            color: var(--secondary);
+        }
+        
+        .mobile-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            color: white;
+            padding: 180px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://agenciadepublicidad.site/images/pattern.png');
+            opacity: 0.1;
+            z-index: 0;
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .counter-container {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: 40px auto;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .counter-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .counter {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .counter-item {
+            background-color: var(--secondary);
+            padding: 10px 15px;
+            border-radius: 4px;
+            min-width: 70px;
+        }
+        
+        .counter-number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        
+        .counter-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+        /* Video Section */
+        .video-section {
+            background-color: var(--light);
+            padding: 60px 0;
+        }
+        
+        .video-container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .video-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 20px;
+            background-color: var(--light);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: var(--accent);
+        }
+        
+        /* Audience */
+        .audience {
+            background-color: var(--light);
+        }
+        
+        .audience-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .audience-text {
+            flex: 1;
+        }
+        
+        .audience-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .audience-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .audience-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+        
+        .stat-label {
+            font-size: 1rem;
+            color: var(--text-light);
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 50px auto 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+        
+        .faq-question {
+            padding: 20px;
+            background-color: var(--light);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        
+        .faq-answer {
+            padding: 0 20px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: white;
+        }
+        
+        .faq-answer.active {
+            padding: 20px;
+            max-height: 500px;
+        }
+        
+        .faq-toggle {
+            font-size: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-toggle.active {
+            transform: rotate(45deg);
+        }
+        
+        /* CTA */
+        .cta {
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 60px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            padding-left: 5px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+        
+        /* Botón flotante de Telegram */
+        .telegram-float {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            width: 60px;
+            height: 60px;
+            background-color: #0088cc;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            transition: var(--transition);
+            animation: pulse 2s infinite;
+        }
+        
+        .telegram-float:hover {
+            transform: scale(1.1);
+            background-color: #0077b5;
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 992px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .audience-content {
+                flex-direction: column;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: var(--transition);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .hero {
+                padding: 150px 0 80px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .counter {
+                flex-wrap: wrap;
+            }
+            
+            .audience-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .telegram-float {
+                width: 50px;
+                height: 50px;
+                font-size: 24px;
+                bottom: 20px;
+                left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Botón flotante de Telegram -->
+    <a href="https://t.me/tu_usuario_de_telegram" class="telegram-float" target="_blank" aria-label="Contactar por Telegram">
+        <i class="fab fa-telegram"></i>
+    </a>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo-container">
+                <!-- Reemplaza la URL con la de tu logo -->
+                <img src="https://files.imagetourl.net/uploads/1763091848508-497394da-8c91-440e-b66b-eb032174135c.png" alt="Logo Agencia Publicidad" class="logo-img">
+                <a href="#" class="logo">AgenciaDe<span>Publicidad</span></a>
+            </div>
+            <div class="mobile-toggle">☰</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#audiencia">Audiencia</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+                <li><a href="#contacto" class="btn btn-accent">Contactar</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Impulsa Tu Negocio Con Más De 5 Millones De Usuarios</h1>
+            <p>Llegamos a una audiencia masiva en América y España a través de WhatsApp y Telegram. Contrata nuestros servicios de publicidad y haz crecer tu negocio exponencialmente.</p>
+            <a href="#contacto" class="btn">Contactar Ahora</a>
+            
+            <div class="counter-container">
+                <div class="counter-title">¡Oferta especial! Descuento por tiempo limitado:</div>
+                <div class="counter">
+                    <div class="counter-item">
+                        <div class="counter-number" id="hours">24</div>
+                        <div class="counter-label">Horas</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" id="minutes">00</div>
+                        <div class="counter-label">Minutos</div>
+                    </div>
+                    <div class="counter-item">
+                        <div class="counter-number" id="seconds">00</div>
+                        <div class="counter-label">Segundos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="text-center">Descubre Cómo Funciona Nuestra Publicidad</h2>
+            <p class="text-center">Mira nuestro video explicativo para entender cómo podemos impulsar tu negocio</p>
+            
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <!-- Reemplaza el ID del video con el de tu video de YouTube -->
+                    <iframe src="https://www.youtube.com/embed/TU_VIDEO_ID" 
+                            title="Video explicativo de nuestra agencia de publicidad" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="video-text">
+                <p>Nuestras campañas publicitarias están diseñadas para maximizar el retorno de inversión</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios">
+        <div class="container">
+            <h2 class="text-center">Nuestros Servicios</h2>
+            <p class="text-center">Ofrecemos soluciones integrales para potenciar tu presencia digital y aumentar tus ventas.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Publicidad Digital</h3>
+                    <p>Llegamos a más de 5 millones de usuarios a través de WhatsApp y Telegram. Campañas segmentadas para maximizar resultados.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💻</div>
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de sitios web profesionales, optimizados para SEO y responsive design para todos los dispositivos.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📲</div>
+                    <h3>Aplicaciones Android</h3>
+                    <p>Desarrollo de aplicaciones móviles nativas para Android, diseñadas para mejorar la experiencia de usuario.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Posicionamiento SEO</h3>
+                    <p>Optimizamos tu sitio web para mejorar su visibilidad en los motores de búsqueda y atraer más clientes.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>Venta de Cursos</h3>
+                    <p>Desarrollamos y comercializamos cursos online sobre marketing digital, desarrollo web y más.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Estrategias de Marketing</h3>
+                    <p>Desarrollamos estrategias personalizadas para aumentar tu presencia digital y generar más ventas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Audience Section -->
+    <section class="audience" id="audiencia">
+        <div class="container">
+            <div class="audience-content">
+                <div class="audience-text">
+                    <h2>Llegamos a Más de 5 Millones de Usuarios</h2>
+                    <p>Nuestra red de contactos en WhatsApp y Telegram nos permite conectar tu marca con una audiencia masiva en América y España. Segmentamos por intereses, ubicación y comportamiento para garantizar que tu mensaje llegue a las personas adecuadas.</p>
+                    
+                    <div class="audience-stats">
+                        <div class="stat">
+                            <div class="stat-number">5M+</div>
+                            <div class="stat-label">Usuarios Activos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Países</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Tasa de Engagement</div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="btn">Quiero Llegar a Esta Audiencia</a>
+                </div>
+                
+                <div class="audience-image">
+                    <!-- Cambia esta URL por tu imagen -->
+                    <img src="https://files.imagetourl.net/uploads/1763091848508-497394da-8c91-440e-b66b-eb032174135c.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2 class="text-center">Preguntas Frecuentes</h2>
+            <p class="text-center">Resolvemos tus dudas sobre nuestros servicios y cómo podemos ayudarte a crecer.</p>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Cómo funciona la publicidad en WhatsApp y Telegram?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Utilizamos nuestras redes de contactos masivas para distribuir tu mensaje publicitario de forma segmentada. Puedes elegir el público objetivo por país, intereses o demografía para maximizar el retorno de inversión.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Qué incluye el servicio de desarrollo web?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestro servicio de desarrollo web incluye diseño responsive, optimización SEO, integración con redes sociales, formularios de contacto, panel de administración y certificado SSL para seguridad.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Cuánto tiempo toma desarrollar una aplicación Android?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo de desarrollo varía según la complejidad de la aplicación. Una app básica puede tomar entre 4-6 semanas, mientras que aplicaciones más complejas pueden requerir 2-4 meses. Te proporcionamos un cronograma detallado al inicio del proyecto.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿En qué países tienen presencia?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tenemos cobertura en toda América (México, Colombia, Argentina, Chile, Perú, Ecuador, etc.) y España. Podemos segmentar campañas por país o región específica según tus necesidades.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        ¿Ofrecen servicios de seguimiento y análisis?
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, proporcionamos informes detallados de rendimiento para todas nuestras campañas. Incluimos métricas como alcance, engagement, clics, conversiones y retorno de inversión para que puedas medir el éxito de tu inversión.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="contacto">
+        <div class="container">
+            <h2>¿Listo para Impulsar Tu Negocio?</h2>
+            <p>Contáctanos ahora a través de Telegram y aprovecha nuestro descuento por tiempo limitado. Nuestro equipo está listo para ayudarte a alcanzar tus objetivos.</p>
+            <a href="https://t.me/tu_usuario_de_telegram" class="btn" target="_blank">Contactar por Telegram</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Agencia Publicidad</h3>
+                    <p>Líder en publicidad digital con alcance a más de 5 millones de usuarios en América y España.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://t.me/tu_usuario_de_telegram" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Publicidad Digital</a></li>
+                        <li><a href="#servicios">Desarrollo Web</a></li>
+                        <li><a href="#servicios">Aplicaciones Android</a></li>
+                        <li><a href="#servicios">Posicionamiento SEO</a></li>
+                        <li><a href="#servicios">Venta de Cursos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#audiencia">Audiencia</a></li>
+                        <li><a href="#faq">Preguntas Frecuentes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@agenciadepublicidad.site</li>
+                        <li>Teléfono: +1 (555) 123-4567</li>
+                        <li><a href="https://t.me/tu_usuario_de_telegram" target="_blank">Telegram: @tu_usuario</a></li>
+                        <li><a href="https://wa.me/15551234567" target="_blank">WhatsApp: +1 (555) 123-4567</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 Agencia de Publicidad. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Contador de descuento
+        function startCountdown() {
+            const countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 horas desde ahora
+            
+            const countdownFunction = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countDownDate - now;
+                
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+                
+                if (distance < 0) {
+                    clearInterval(countdownFunction);
+                    document.getElementById("hours").innerHTML = "00";
+                    document.getElementById("minutes").innerHTML = "00";
+                    document.getElementById("seconds").innerHTML = "00";
+                }
+            }, 1000);
+        }
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const toggle = question.querySelector('.faq-toggle');
+                
+                if (answer.classList.contains('active')) {
+                    answer.classList.remove('active');
+                    toggle.classList.remove('active');
+                } else {
+                    // Cerrar otras respuestas abiertas
+                    document.querySelectorAll('.faq-answer').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.querySelectorAll('.faq-toggle').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    
+                    // Abrir la respuesta actual
+                    answer.classList.add('active');
+                    toggle.classList.add('active');
+                }
+            });
+        });
+        
+        // Menú móvil
+        document.querySelector('.mobile-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+        
+        // Cerrar menú al hacer clic en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+            });
+        });
+        
+        // Inicializar contador cuando la página cargue
+        window.onload = function() {
+            startCountdown();
+        };
+    </script>
+</body>
+</html>
