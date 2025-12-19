@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agencia de Publicidad líder con más de 5 millones de usuarios. Ofrecemos servicios de marketing digital, desarrollo web, aplicaciones Android, SEO y cursos.">
+    <meta name="description" content="Agencia de Publicidad de Canales de Whatsapp | Líder en el mercado con más de 10 millones de usuarios. Ofrecemos servicios de marketing digital, desarrollo web, aplicaciones Android, SEO y cursos.">
     <meta name="keywords" content="agencia publicidad, marketing digital, desarrollo web, aplicaciones android, SEO, posicionamiento web, cursos digitales, WhatsApp, Telegram">
     <meta name="author" content="Agencia de Publicidad">
     <title>Agencia de Publicidad | Marketing Digital, Desarrollo Web y SEO</title>
@@ -33,946 +33,1197 @@
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <style>
-        :root {
-            --primary: #2C3E50;
-            --secondary: #E74C3C;
-            --accent: #3498DB;
-            --light: #ECF0F1;
-            --dark: #2C3E50;
-            --text: #333333;
-            --text-light: #7F8C8D;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --transition: all 0.3s ease;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            background-color: #fff;
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 1rem;
-        }
-        
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--secondary);
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            font-weight: 600;
-            transition: var(--transition);
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        
-        .btn:hover {
-            background-color: #c0392b;
-            transform: translateY(-3px);
-            box-shadow: var(--shadow);
-        }
-        
-        .btn-accent {
-            background-color: var(--accent);
-        }
-        
-        .btn-accent:hover {
-            background-color: #2980b9;
-        }
-        
-        section {
-            padding: 80px 0;
-        }
-        
-        .text-center {
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EEJ70V5X8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9EEJ70V5X8');
+</script>
+<style>
+    body {
+        background-color: #141414;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    /* Fondo con efecto nublado */
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: url('https://i.ibb.co/7tq9fX0/photo-5154685157725286167-m.jpg') no-repeat center center/cover;
+        filter: blur(2px) brightness(0.5);
+        z-index: -1;
+    }
+    .logo {
+        width: 150px;
+        margin: 20px;
+    }
+    .container {
+        text-align: center;
+        padding: 20px;
+    }
+    .title {
+        font-size: 1.5em;
+        margin-top: 40px;
+    }
+    .subtitle {
+        font-size: 1.2em;
+        margin-top: 10px;
+        color: #ccc;
+    }
+    .button {
+        background-color: #e50914;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1em;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .button:hover {
+        background-color: #f40612;
+    }
+    .green-button {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1em;
+        margin-top: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .green-button:hover {
+        background-color: #218838;
+    }
+    .trending {
+        margin-top: 40px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1em;
+    }
+    .gallery {
+        display: flex;
+        overflow-x: auto;
+        padding: 20px;
+        gap: 10px;
+    }
+    .gallery img {
+        width: 100px;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+   }
+        /* Contenedor de búsqueda */
+        .search-container {
+            padding: 10px;
+            background-color: #87ddfa;
             text-align: center;
         }
-        
-        /* Header */
-        header {
-            background-color: white;
-            box-shadow: var(--shadow);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+        .search-container input {
+            padding: 10px;
+            width: 85%;
+            border: 1px solid #ddd;
+            border-radius: 15px;
         }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
+        /* Tarjetas de juegos */
+        .cards {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: flex-start;
+           max-width: 1000px; /* Puedes ajustar este ancho según tu diseño */
+           margin: 0 auto; /* Centra el contenedor */
+           padding: 10px;
+           gap: 10px;
         }
-        
-        .logo-container {
-            display: flex;
-            align-items: center;
+
+        .card {
+           background-color: #fff;
+           border: 1px solid #ddd;
+           border-radius: 5px;
+           width: calc(42% - 10px);
+           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+           padding: 15px;
+           text-align: center;
         }
-        
-        .logo-img {
-            height: 40px;
-            width: auto;
-            margin-right: 10px;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
-        
-        .logo span {
-            color: var(--secondary);
-        }
-        
-        .nav-menu {
-            display: flex;
-            list-style: none;
-        }
-        
-        .nav-menu li {
-            margin-left: 30px;
-        }
-        
-        .nav-menu a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 600;
-            transition: var(--transition);
-        }
-        
-        .nav-menu a:hover {
-            color: var(--secondary);
-        }
-        
-        .mobile-toggle {
-            display: none;
-            font-size: 24px;
-            cursor: pointer;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
-            color: white;
-            padding: 180px 0 100px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://agenciadepublicidad.site/images/pattern.png');
-            opacity: 0.1;
-            z-index: 0;
-        }
-        
-        .hero .container {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .counter-container {
-            background-color: rgba(255, 255, 255, 0.15);
-            border-radius: 8px;
-            padding: 20px;
-            max-width: 500px;
-            margin: 40px auto;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-        
-        .counter-title {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-        }
-        
-        .counter {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .counter-item {
-            background-color: var(--secondary);
-            padding: 10px 15px;
-            border-radius: 4px;
-            min-width: 70px;
-        }
-        
-        .counter-number {
-            font-size: 2rem;
-            font-weight: 700;
-        }
-        
-        .counter-label {
-            font-size: 0.8rem;
-            text-transform: uppercase;
-        }
-        
-        /* Video Section */
-        .video-section {
-            background-color: var(--light);
-            padding: 60px 0;
-        }
-        
-        .video-container {
-            max-width: 800px;
-            margin: 0 auto;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-        
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-        }
-        
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .video-text {
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        /* Services */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 50px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: var(--transition);
-            text-align: center;
-            padding: 30px 20px;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-        }
-        
-        .service-icon {
-            width: 70px;
-            height: 70px;
-            margin: 0 auto 20px;
-            background-color: var(--light);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            color: var(--accent);
-        }
-        
-        /* Audience */
-        .audience {
-            background-color: var(--light);
-        }
-        
-        .audience-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .audience-text {
-            flex: 1;
-        }
-        
-        .audience-image {
-            flex: 1;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-        
-        .audience-image img {
+
+        .card img {
             width: 100%;
             height: auto;
-            display: block;
+            border-radius: 15px;
         }
-        
-        .audience-stats {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
+        .card h2 {
+            font-size: 14px;
+            color: #333;
         }
-        
-        .stat {
-            text-align: center;
+        .card h3 {
+            font-size: 13px;
+            color: #555;
         }
-        
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--secondary);
+        .card p {
+            font-size: 12px;
+            color: #777;
         }
-        
-        .stat-label {
-            font-size: 1rem;
-            color: var(--text-light);
-        }
-        
-        /* FAQ */
-        .faq-container {
-            max-width: 800px;
-            margin: 50px auto 0;
-        }
-        
-        .faq-item {
-            margin-bottom: 15px;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-        }
-        
-        .faq-question {
-            padding: 20px;
-            background-color: var(--light);
+        .card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
             cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
         }
-        
-        .faq-answer {
-            padding: 0 20px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease;
-            background-color: white;
-        }
-        
-        .faq-answer.active {
-            padding: 20px;
-            max-height: 500px;
-        }
-        
-        .faq-toggle {
-            font-size: 20px;
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-toggle.active {
-            transform: rotate(45deg);
-        }
-        
-        /* CTA */
-        .cta {
-            background: linear-gradient(to right, var(--primary), var(--accent));
-            color: white;
-            text-align: center;
-            padding: 80px 0;
-        }
-        
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .cta p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 60px 0 20px;
-        }
-        
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 40px;
-            height: 3px;
-            background-color: var(--secondary);
-        }
-        
-        .footer-links {
-            list-style: none;
-        }
-        
-        .footer-links li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-links a {
-            color: #bdc3c7;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .footer-links a:hover {
-            color: white;
-            padding-left: 5px;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .social-link {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-        
-        .social-link:hover {
-            background-color: var(--secondary);
-            transform: translateY(-3px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            color: #bdc3c7;
-        }
-        
-        /* Botón flotante de Telegram */
-        .telegram-float {
-            position: fixed;
-            bottom: 25px;
-            left: 25px;
-            width: 60px;
-            height: 60px;
-            background-color: #3ccc14;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            z-index: 999;
-            transition: var(--transition);
-            animation: pulse 2s infinite;
-        }
-        
-        .telegram-float:hover {
-            transform: scale(1.1);
-            background-color: #19fa19;
-        }
-        
-        @keyframes pulse {
-            0% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.7);
-            }
-            70% {
-                box-shadow: 0 0 0 15px rgba(0, 136, 204, 0);
-            }
-            100% {
-                box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
-            }
-        }
-        
-        /* Responsive */
-        @media (max-width: 992px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .audience-content {
-                flex-direction: column;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .mobile-toggle {
-                display: block;
-            }
-            
-            .nav-menu {
-                position: fixed;
-                top: 70px;
-                left: -100%;
-                width: 100%;
-                height: calc(100vh - 70px);
-                background-color: white;
-                flex-direction: column;
-                align-items: center;
-                justify-content: flex-start;
-                padding-top: 50px;
-                transition: var(--transition);
-            }
-            
-            .nav-menu.active {
-                left: 0;
-            }
-            
-            .nav-menu li {
-                margin: 15px 0;
-            }
-            
-            .hero {
-                padding: 150px 0 80px;
-            }
-            
-            .hero h1 {
-                font-size: 2rem;
-            }
-            
-            .counter {
-                flex-wrap: wrap;
-            }
-            
-            .audience-stats {
-                flex-direction: column;
-                gap: 20px;
-            }
-            
-            .telegram-float {
-                width: 50px;
-                height: 50px;
-                font-size: 24px;
-                bottom: 20px;
-                left: 20px;
-            }
-        }
-    </style>
+    .reasons {
+        margin-top: 40px;
+        text-align: left;
+        padding-left: 20px;
+        font-size: 1.2em;
+    }
+    .container-reasons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    .reason {
+        background-color: #0f072b;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 20px;
+        border: 2px solid #ffffff;
+        width: 90%;
+        max-width: 1200px;
+        color: #fff;
+    }
+    .reason-title {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    .reason-subtitle {
+        font-size: 1em;
+        color: #ccc;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    /* Estilos para Preguntas Frecuentes */
+.faq-container {
+    margin: 20px;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq-answer {
+    padding: 15px;
+    background-color: #222;
+    color: #ccc;
+    display: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+</style>
 </head>
 <body>
-    <!-- Botón flotante de Telegram -->
-    <a href="https://t.me/TheTeacherdeCursos" class="telegram-float" target="_blank" aria-label="Contactar por Telegram">
-        <i class="fab fa-telegram"></i>
+
+<!-- Fondo nublado -->
+<div class="background"></div>
+
+<!-- Logo -->
+<img src="https://i.ibb.co/wwkTFSW/WHATSAPP-20241229-030357-0000.png" alt="Logo" class="logo">
+
+    <!-- Añadido el contenedor para el icono en la esquina superior derecha -->
+<div style="position: absolute; top: 20px; right: 20px;">
+    <a href="https://www.apklis.cu/application/gana.seguidoresgratis" target="_blank" id="customIconLink">
+        <img src="https://cdn-icons-png.flaticon.com/512/10009/10009919.png" alt="Ícono Personalizado" style="width: 40px; height: 40px; cursor: pointer;">
     </a>
+</div>
 
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo-container">
-                <!-- Reemplaza la URL con la de tu logo -->
-                <img src="https://files.imagetourl.net/uploads/1763091848508-497394da-8c91-440e-b66b-eb032174135c.png" alt="Logo Agencia Publicidad" class="logo-img">
-                <a href="#" class="logo">AgenciaDe<span>Publicidad</span></a>
-            </div>
-            <div class="mobile-toggle">☰</div>
-            <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#audiencia">Audiencia</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#contacto" class="btn btn-accent">Contactar</a></li>
-            </ul>
-        </div>
-    </header>
+<!-- Título y subtítulo -->
+<div class="container">
+    <h1 class="title">Si deseas comprar publicidad en los mejores Canales de Whatsapp toca el botón rojo de abajo</h1>
+    <h2 class="subtitle">Con más de 10 Millones de seguidores podemos hacer crecer tu canal o negocio en 24 horas</h2>
+    <button class="button" onclick="goToPeliculas()">Comprar publicidad ></button>
+    <!-- Botón verde para la sección servicios -->
+    <button class="green-button" onclick="goToServicios()">Vender publicidad ></button>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="inicio">
-        <div class="container">
-            <h1>Impulsa Tu Negocio Con Más De 5 Millones De Usuarios</h1>
-            <p>Llegamos a una audiencia masiva en América y España a través de WhatsApp y Telegram. Contrata nuestros servicios de publicidad y haz crecer tu negocio exponencialmente.</p>
-            <a href="#contacto" class="btn">Contactar Ahora</a>
-            
-            <div class="counter-container">
-                <div class="counter-title">¡Oferta especial! Descuento por tiempo limitado:</div>
-                <div class="counter">
-                    <div class="counter-item">
-                        <div class="counter-number" id="hours">24</div>
-                        <div class="counter-label">Horas</div>
-                    </div>
-                    <div class="counter-item">
-                        <div class="counter-number" id="minutes">00</div>
-                        <div class="counter-label">Minutos</div>
-                    </div>
-                    <div class="counter-item">
-                        <div class="counter-number" id="seconds">00</div>
-                        <div class="counter-label">Segundos</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Sección de tendencias -->
+<h2 class="trending">🏆 TOP 10 DE CANALES (MENSUAL) DESLIZA ></h2>
+<div class="gallery">
+    <a href="https://whatsapp.com/channel/0029VaiK9Tb1Hsq227sVpO3q" target="_blank">
+        <img src="https://i.ibb.co/DtQpVHp/photo-4920562015064403488-y.jpg" alt="Imagen 1">
+    </a>
+    <a href="https://whatsapp.com/channel/0029VaayR0KElah13QGKbI2c" target="_blank">
+        <img src="https://i.ibb.co/LzR2fBg/Dise-o-sin-t-tulo-20250112-033233-0000.png" alt="Imagen 2">
+    </a>
+    <a href="https://whatsapp.com/channel/0029VacFxMgDTkJyDjNXvN2u" target="_blank">
+        <img src="https://i.ibb.co/V3ztjhv/Dise-o-sin-t-tulo-20250112-035018-0000.png" alt="Imagen 3">
+    </a>
+    <a href="https://whatsapp.com/channel/0029VaY8mnxElagrHnIZz60G" target="_blank">
+        <img src="https://i.ibb.co/NVmr33F/photo-4911434930387529307-y.jpg" alt="Imagen 4">
+    </a>
+    <a href="https://whatsapp.com/channel/0029Vax6FjYLo4hmcpI8JL19" target="_blank">
+        <img src="https://i.ibb.co/ZXqDxFH/photo-5168249815497289324-y.jpg" alt="Imagen 5">
+    </a>
+    <a href="https://wa.me//+5351246102" target="_blank">
+        <img src="https://i.ibb.co/RDYSgc6/photo-4911434930387529308-y.jpg" alt="Imagen 6">
+    </a>
+    <a href="https://wa.me//+5351246102" target="_blank">
+        <img src="https://i.ibb.co/p44QsyV/photo-4911434930387529309-y.jpg" alt="Imagen 7">
+    </a>
+    <a href="https://wa.me//+5351246102" target="_blank">
+        <img src="https://i.ibb.co/tmJDF82/photo-4911434930387529310-y.jpg" alt="Imagen 8">
+    </a>
+    <a href="https://wa.me//+5351246102" target="_blank">
+        <img src="https://i.ibb.co/w09T3kb/photo-4911434930387529311-y.jpg" alt="Imagen 9">
+    </a>
+    <a href="https://wa.me//+5351246102" target="_blank">
+        <img src="https://i.ibb.co/N35xjcC/photo-4911434930387529312-y.jpg" alt="Imagen 10">
+    </a>
+</div>
 
-   <!-- Video Section -->
-<section class="video-section">
-    <div class="container">
-        <h2 class="text-center">Descubre Cómo Funciona Nuestra Publicidad</h2>
-        <p class="text-center">Mira nuestro video explicativo para entender cómo podemos impulsar tu negocio</p>
-        
-        <div class="video-container">
-            <div class="video-wrapper">
-                <!-- URL CORREGIDA -->
-                <iframe src="https://www.youtube.com/embed/sINouVWLr3Q" 
-                        title="Video explicativo de nuestra agencia de publicidad" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-        <div class="video-text">
-            <p>Nuestras campañas publicitarias están diseñadas para maximizar el retorno de inversión</p>
-        </div>
+
+    <!-- Contenedor de búsqueda -->
+    <div class="search-container">
+        <input type="text" placeholder="🔎 Buscar canales por su nombre...">
     </div>
-</section>
 
-    <!-- Services Section -->
-    <section id="servicios">
-        <div class="container">
-            <h2 class="text-center">Nuestros Servicios</h2>
-            <p class="text-center">Ofrecemos soluciones integrales para potenciar tu presencia digital y aumentar tus ventas.</p>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">📱</div>
-                    <h3>Publicidad Digital</h3>
-                    <p>Llegamos a más de 5 millones de usuarios a través de WhatsApp y Telegram. Campañas segmentadas para maximizar resultados.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Desarrollo Web</h3>
-                    <p>Creación de sitios web profesionales, optimizados para SEO y responsive design para todos los dispositivos.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📲</div>
-                    <h3>Aplicaciones Android</h3>
-                    <p>Desarrollo de aplicaciones móviles nativas para Android, diseñadas para mejorar la experiencia de usuario.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🔍</div>
-                    <h3>Posicionamiento SEO</h3>
-                    <p>Optimizamos tu sitio web para mejorar su visibilidad en los motores de búsqueda y atraer más clientes.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">🎓</div>
-                    <h3>Venta de Cursos</h3>
-                    <p>Desarrollamos y comercializamos cursos online sobre marketing digital, desarrollo web y más.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Estrategias de Marketing</h3>
-                    <p>Desarrollamos estrategias personalizadas para aumentar tu presencia digital y generar más ventas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Tarjetas de juegos -->
+    <div class="cards">
+    <div class="card">
+        <img src="https://i.ibb.co/BG5sdwq/photo-5154685157725286162-x.jpg" alt="Robbery Bob">
+        <h2>Películas y Series</h2>
+        <h3>✅ Categoría: Películas</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb0p7zMAzNboitxmv201'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/sVkS9Z4/photo-5175150479322230321-x.jpg" alt="Clash Royale">
+        <h2>Educación Sexual</h2>
+        <h3>✅ Categoría: Educativo</h3>
+        <p>+1.7k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VatUlg83bbV3NElzPu0t'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/GxBb9sz/photo-5168249815497289327-x.jpg" alt="Robbery Bob">
+        <h2>Indirectas y Videos</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+8k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VasV1toJJhzT6vAEni2u'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/9nqnBPV/photo-4907179468200718008-x.jpg" alt="Robbery Bob">
+        <h2>Frases y Memes</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+11k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaOKYh2DjiOZx9yODJ3i'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/yfvMMdP/photo-4933953332251307667-y.jpg" alt="Clash Royale">
+        <h2>Aprende Inglés Gratis</h2>
+        <h3>✅ Categoría: Educativo</h3>
+        <p>+600</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VawiBipLtOj6yJZhH714'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/Hn6hZhg/photo-5168249815497289331-y.jpg" alt="Robbery Bob">
+        <h2>Verdadero o Falso</h2>
+        <h3>✅ Categoría: Trivia</h3>
+        <p>+100</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaxKv4q9hXF1bLQz4k0h'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/z4m2kK4/photo-4933953332251307668-x.jpg" alt="Clash Royale">
+        <h2>Stickerslandia</h2>
+        <h3>✅ Categoría: Entretenimiento</h3>
+        <p>+2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VafaRlf5vKAGwXbWAN05'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/GvxmXY4/photo-5154685157725286165-x.jpg" alt="Robbery Bob">
+        <h2>Recetas de Cocina</h2>
+        <h3>✅ Categoría: Recetas</h3>
+        <p>+200</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vax6FjYLo4hmcpI8JL19'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/1bwBykF/photo-5154685157725286161-x.jpg" alt="Clash Royale">
+        <h2>Imágenes para dedicar</h2>
+        <h3>✅ Categoría: Imágenes</h3>
+        <p>+400</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaMBupS8V0tnG6JyAI2S'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/XprYmJv/photo-4902727726008481907-x.jpg" alt="Clash Royale">
+        <h2>Consejos de Belleza</h2>
+        <h3>✅ Categoría: Salud</h3>
+        <p>+100</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb2Ne819Gv7XWqilq80o'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/zHVz3Bq/photo-4907179468200718002-x.jpg" alt="Clash Royale">
+        <h2>Horóscopo Diario</h2>
+        <h3>✅ Categoría: Ciencia</h3>
+        <p>+7k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamPHYv2UPBIqCbRrw2V'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/5LKw98h/photo-4933953332251307671-y.jpg" alt="Robbery Bob">
+        <h2>¿Sabías qué?</h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VasaYx589inr47hbjt20'">Ver Canal</button>
+    </div>
+         <div class="card">
+        <img src="https://i.ibb.co/j80TdPq/photo-4933953332251307669-y.jpg" alt="Clash Royale">
+        <h2>Ideas de Tatuajes</h2>
+        <h3>✅ Categoría: Arte</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vajv1CL7oQhePAXXMK2O'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/PmfjCwL/photo-4933953332251307670-y.jpg" alt="Robbery Bob">
+        <h2>Trucos Psicológicos</h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+200</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaXf8oU9mrGabPulB93d'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/ng7FCDV/photo-5177122427656842614-x.jpg" alt="Robbery Bob">
+        <h2>Reflexionista</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+2.3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaqTS1b17EmrRlOmt23l'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/v4p3RpJ/photo-5177122427656842615-x.jpg" alt="Robbery Bob">
+        <h2>Un amor de secundaria</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+2.4k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vajv1CL7oQhePAXXMK2O'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/LPFcXhp/photo-4911434930387529305-x.jpg" alt="Robbery Bob">
+        <h2>Videos & Frases Sad</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+100k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VanjRZBEFeXiB53BAa1b'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/hLRf51z/photo-5186274259935276836-x.jpg" alt="Robbery Bob">
+        <h2>Videos de Instagram</h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+156k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VadsDkQGE56jj8dBDW3R'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/X7DJ6QS/photo-5186274259935276837-x.jpg" alt="Clash Royale">
+        <h2>Somos adolescentes</h2>
+        <h3>✅ Categoría: Stickers</h3>
+        <p>+22k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaqxDTQ7z4ket9ZHqq15'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/L17SPDw/photo-5186274259935276838-x.jpg" alt="Robbery Bob">
+        <h2>Frases Videos Sad</h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+22k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamfRArBqbr0pUo7zs2X'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/bJN1wDr/photo-5186274259935276839-x.jpg" alt="Clash Royale">
+        <h2>Videos Memes Humor</h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+17k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VajtVOP29752RvDUL13r'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/c1ny21X/photo-5186274259935276840-x.jpg" alt="Robbery Bob">
+        <h2>Stickers y Memes</h2>
+        <h3>✅ Categoría: Stickers</h3>
+        <p>+27k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaeBY1V3GJP7M3EJjw2L'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/8xt8v7N/photo-5186274259935276841-x.jpg" alt="Clash Royale">
+        <h2>Videos y Memes</h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+31k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vah1jl8I7BeKfqf1qE1o'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/Xy0WSjy/photo-4907179468200717995-x.jpg" alt="Clash Royale">
+        <h2>I Love You</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+95k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VacCOZHBPzjT1S2gbU28'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/cxynqMP/photo-5168249815497289325-x.jpg" alt="Robbery Bob">
+        <h2>Una bandida enamorada</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1.6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamA1tf2f3EFI3eRQZ1u'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/BqkF8Rg/photo-5154685157725286143-x.jpg" alt="Clash Royale">
+        <h2>Videos - Frases - fotos</h2>
+        <h3>✅ Categoría: Imágenes</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vakv4OfJUM2WquMAAm0f'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/6wq4Fwy/photo-5170501615310974630-x.jpg" alt="Robbery Bob">
+        <h2>Stickers Pro</h2>
+        <h3>✅ Categoría: Stickers</h3>
+        <p>+22k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VawpBA7H5JLwJGG3SR0d'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/f2XyRVg/photo-5170501615310974631-x.jpg" alt="Clash Royale">
+        <h2>Rolitas - Música</h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+12k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Val9AQlLCoX0fsBTge3I'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/FwSVSqY/photo-5154685157725286144-x.jpg" alt="Robbery Bob">
+        <h2>Girls</h2>
+        <h3>✅ Categoría: Woman</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaksNf5BA1f3KeLFEZ06'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/Zc047FB/photo-5154685157725286145-x.jpg" alt="Clash Royale">
+        <h2>Ecos de El universo</h2>
+        <h3>✅ Categoría: Imágenes</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VafqwqQEquiUJI2LKl3J'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/j8B7p3B/photo-5154685157725286146-x.jpg" alt="Robbery Bob">
+        <h2>I fell into your cobwebs</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VarW6BQ2975KNr5ywV3B'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/fG4XFmm/photo-5154685157725286147-x.jpg" alt="Clash Royale">
+        <h2>2009</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+9k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vaaw775AYlUBiQL5Hf3Y'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/3f9gLkK/photo-5154685157725286148-x.jpg" alt="Robbery Bob">
+        <h2>Moon Girl</h2>
+        <h3>✅ Categoría: Arte</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaePVwFInlqJ23XcWF2o'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/hggjdSD/photo-5154685157725286149-x.jpg" alt="Clash Royale">
+        <h2>Un poquito de todo</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VacQqE72f3EIhiiz1A2F'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/SKdXz7j/photo-5154685157725286150-x.jpg" alt="Robbery Bob">
+        <h2>Frases</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+4k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaswZC01yT2I6JpVKg34'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/XLmcP8Y/photo-5154685157725286152-x.jpg" alt="Clash Royale">
+        <h2>Princess</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vab43tg60eBn1JPtyL0k'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/K9qzJjt/photo-5154685157725286153-x.jpg" alt="Robbery Bob">
+        <h2>Estados para mi admirador</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb1Qg3XEVccQZOpZql1S'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/Wp7zXZM/photo-5154685157725286154-x.jpg" alt="Clash Royale">
+        <h2>Whatsapp channel</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VajK0SbDOQIa1kOmas1P'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/PQ2WfjH/photo-5154685157725286156-x.jpg" alt="Robbery Bob">
+        <h2>Stickers 24/7</h2>
+        <h3>✅ Categoría: Stickers</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamfKiiK5cDB6JDa1F0u'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/722Xdtm/photo-5154685157725286157-x.jpg" alt="Clash Royale">
+        <h2>Fans de Anuel AA</h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vav4Q6WElah2PcZidw3b'">Ver Canal</button>
+    </div>
+    <div class="card">
+        <img src="https://i.ibb.co/W25tdrX/photo-5175150479322230322-x.jpg" alt="Robbery Bob">
+        <h2>Películas Diarias</h2>
+        <h3>✅ Categoría: Películas</h3>
+        <p>+5k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaszPViK0IBh9uprMH19'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/PZBgYrq/photo-5177122427656842616-x.jpg" alt="Robbery Bob">
+        <h2>Bandidos</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1.3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamPHYv2UPBIqCbRrw2V'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/vVVj1qh/photo-5177122427656842612-x.jpg" alt="Robbery Bob">
+        <h2>Curioso World 2.0</h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+2.6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VajEntE4Crff59crNI3h'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/sszSzVB/photo-5177122427656842628-x.jpg" alt="Robbery Bob">
+        <h2>La Flame Gang</h2>
+        <h3>✅ Categoría: Random</h3>
+        <p>+34</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamE80C5a23wRJXB4726'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/GPDStny/photo-5177122427656842629-x.jpg" alt="Robbery Bob">
+        <h2>Insomnio</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+500</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VakdViALo4henIJBp70t'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/F6FztGT/photo-5177122427656842631-x.jpg" alt="Robbery Bob">
+        <h2>Filmes & Series</h2>
+        <h3>✅ Categoría: Películas</h3>
+        <p>+2.5k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vas3Gz3LdQelqpI6dp2L'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/k61MpTy/photo-5177122427656842632-x.jpg" alt="Robbery Bob">
+        <h2>Culpa Tuya</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vap0FU73rZZfC1mz610W'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/X4MpW12/photo-5177122427656842635-x.jpg" alt="Robbery Bob">
+        <h2>Adictos a Videos</h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaqRLZn2f3EB1u97Nw0S'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/BfHZTrq/photo-5177122427656842636-x.jpg" alt="Robbery Bob">
+        <h2>Life</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1.1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VavC7JaFSAt5DQVETE0w'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/99G686L/photo-4900040901842285344-x.jpg" alt="Robbery Bob">
+        <h2>Somos Curiosos</h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+3.9k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaylhKl7oQhZgUfRnP3s'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/m9QbWrh/photo-5179374227470528290-x.jpg" alt="Robbery Bob">
+        <h2>Ganst Love</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+400</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VatwD9CLdQeW58QSyD14'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/hfZgkSx/photo-4907179468200717999-x.jpg" alt="Robbery Bob">
+        <h2>My Secret Place</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+200</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaoS35jI1rcrqOTZ3h0C'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/TYccdVf/photo-4907179468200717998-x.jpg" alt="Robbery Bob">
+        <h2>Palabras de Amor</h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+800</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Val6yZiLI8YU46kPKl1o'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/18Y4jrb/photo-4907179468200717997-x.jpg" alt="Robbery Bob">
+        <h2>Tu prima en Tanga</h2></h2>
+        <h3>✅ Categoría: Random</h3>
+        <p>+2.5k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VawPDDJLCoXBDGHQOQ2f'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/TLT1Bhq/photo-4907179468200718005-x.jpg" alt="Robbery Bob">
+        <h2>Frases de Bandidos</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VadrUgT2975B22QKrJ41'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/SxtVrXf/photo-4907179468200718006-x.jpg" alt="Robbery Bob">
+        <h2>Belcom</h2></h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+200</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VadX8g60VycFxqKdXl0G'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/vdCy256/photo-4909431268014402848-x.jpg" alt="Robbery Bob">
+        <h2>Noche hot</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+800</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vak91k972WTmBUad3P0v'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/Z2K3mcM/IMG-20250111-140240-088.jpg" alt="Robbery Bob">
+        <h2>Frases</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaZtiML4SpkOazI5qL1W'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/HYQfN4S/photo-4909431268014402849-x.jpg" alt="Robbery Bob">
+        <h2>Frases y más</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+600</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vay8l5b5EjxyzRVEwx0k'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/kDQpBgK/photo-4909431268014402851-x.jpg" alt="Robbery Bob">
+        <h2>777</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+500</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VajS1UvKWEKivOrbmY2K'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/NjZ7RXC/photo-4909431268014402852-x.jpg" alt="Robbery Bob">
+        <h2>Música</h2></h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VatFq971yT27rdolS13l'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/vwCWbHH/photo-4911434930387529313-x.jpg" alt="Robbery Bob">
+        <h2>12:12</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+700</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vai4HyO6WaKnWwmEyq1E'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/3F5Rcxm/photo-4911434930387529321-x.jpg" alt="Robbery Bob">
+        <h2>Videos y Frases de todo tipo</h2></h2>
+        <h3>✅ Categoría: Random</h3>
+        <p>+290k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vaa4EB28KMqmnFGhNr1W'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/9tY5Trv/photo-4911434930387529315-x.jpg" alt="Robbery Bob">
+        <h2>Películas y Series 2024</h2></h2>
+        <h3>✅ Categoría: Películas</h3>
+        <p>+65k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaiygFYHltY5KTZgGB2d'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/80YZQpF/photo-4911434930387529316-x.jpg" alt="Robbery Bob">
+        <h2>Frases y Videos de Amor</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+100k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VadvvBMCMY0BjmDJTV1W'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/MkcH07S/photo-4911434930387529317-x.jpg" alt="Robbery Bob">
+        <h2>Noticias de Futbol</h2></h2>
+        <h3>✅ Categoría: Deportes</h3>
+        <p>+7k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VakuWcmEVccNkRCZVE0A'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/zfL3xVF/photo-4911434930387529318-x.jpg" alt="Robbery Bob">
+        <h2>Android Mods APK</h2></h2>
+        <h3>✅ Categoría: Aplicaciones</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VamgjRU60eBlJ2s53z13'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/KFL4snG/photo-4911434930387529319-x.jpg" alt="Robbery Bob">
+        <h2>Videos & Frases</h2></h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+33k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VabQ21xEgGfQhgJ2Bb3w'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/HT9VCtB/photo-4911434930387529320-x.jpg" alt="Robbery Bob">
+        <h2>Videos y Frases para Estados</h2></h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+40k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vae1PYsBvvsXbk8L6K2M'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/kDQpBgK/photo-4909431268014402851-x.jpg" alt="Robbery Bob">
+        <h2>Ashley</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb10N1D3AzNQywGmfx2L'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/KFL4snG/photo-4911434930387529319-x.jpg" alt="Robbery Bob">
+        <h2>Videos + Música Urbana</h2></h2>
+        <h3>✅ Categoría: Videos</h3>
+        <p>+250k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaWE3xl9Bb5ouSTkdE3x'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/8DwqTxb/photo-4913686730201214433-x.jpg" alt="Robbery Bob">
+        <h2>Compañia el Duende</h2></h2>
+        <h3>✅ Categoría: Lotería</h3>
+        <p>+11k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaBtX6nLo4hcqR0Til0D'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/ZgqNwj6/photo-4913686730201214434-x.jpg" alt="Robbery Bob">
+        <h2>Compañia el Duende</h2></h2>
+        <h3>✅ Categoría: Adivinanzas</h3>
+        <p>+15k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaTXsTy2phHQWuav793e'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/1dRgWsf/photo-4913686730201214435-x.jpg" alt="Robbery Bob">
+        <h2>Rolitas Musicales y Frases</h2></h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+39k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaVb7p90lwghjFIgRG2B'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/7VFGYvs/photo-4913686730201214436-x.jpg" alt="Robbery Bob">
+        <h2>Momentos y Reflexiones</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+37k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaagCzi1SWsyL8aFXi0N'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/G7mrTRV/photo-4920562015064403476-x.jpg" alt="Robbery Bob">
+        <h2>Android Mods APK Premium</h2></h2>
+        <h3>✅ Categoría: Aplicaciones</h3>
+        <p>+19k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VajBufm0LKZBZoWGML2h'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/VL2w7BW/photo-4920562015064403477-x.jpg" alt="Robbery Bob">
+        <h2>Notas</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+800</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vao0eeCE50Ur1hk2Gj3l'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/d61stxq/photo-4920562015064403478-x.jpg" alt="Robbery Bob">
+        <h2>Akatsuki</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vagdpd4HwXbFw2Pex42u'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/Fmfqv8K/photo-4920562015064403483-x.jpg" alt="Robbery Bob">
+        <h2>Frases y Películas</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vae7fsCBfxo650ozks3P'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/1b5mQr5/photo-4922947478555307456-x.jpg" alt="Robbery Bob">
+        <h2>Familia K-pop</h2></h2>
+        <h3>✅ Categoría: Música</h3>
+        <p>+1.3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VavDaxs3WHTQccUrJA1B'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/prqKz0F/photo-4925199278368992606-x.jpg" alt="Robbery Bob">
+        <h2>Estados para Whatsapp</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+2.6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaYrV8GDOQIbsabIdE2O'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/SJxtKW7/photo-4925199278368992607-x.jpg" alt="Robbery Bob">
+        <h2>Sabías qué?</h2></h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+2.4k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaulCAYBVJlDLfZLsu0C'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/1bqK0Hy/photo-4925199278368992611-x.jpg" alt="Robbery Bob">
+        <h2>Pixel Tavern Keeper</h2></h2>
+        <h3>✅ Categoría: Videojuegos</h3>
+        <p>+200</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb2gZXo1yT1zj1TP6s1H'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/qnRvVyj/photo-4925199278368992612-x.jpg" alt="Robbery Bob">
+        <h2>Memestasis</h2></h2>
+        <h3>✅ Categoría: Memes</h3>
+        <p>+400</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VawkOms6RGJLNqkrZr2B'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/y8jPw7D/photo-4925199278368992613-x.jpg" alt="Robbery Bob">
+        <h2>Camino al éxito</h2></h2>
+        <h3>✅ Categoría: Motivación</h3>
+        <p>+2.6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaczAQ5ISTkBKPWmXG0U'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/hY18v5M/photo-4925199278368992615-x.jpg" alt="Robbery Bob">
+        <h2>La lámpara</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+2.8k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaKKCb5GU3BRMQseAi05'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/0nhWVtX/photo-4925199278368992616-x.jpg" alt="Robbery Bob">
+        <h2>De estrellas a cicatrices</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+500</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaenjrsF1YlKmGr8ki2Y'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/hHr2WkF/photo-4925199278368992618-x.jpg" alt="Robbery Bob">
+        <h2>El Arte de ser una Chica</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+17k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VakIK88GehEN8LjGPT0b'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/BfGf01g/photo-4929490968604946443-x.jpg" alt="Robbery Bob">
+        <h2>Culpa tuya</h2></h2>
+        <h3>✅ Categoría: Películas</h3>
+        <p>+47k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Va9OWVuEwEjuViH1p52H'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/VBb39cW/photo-4929490968604946445-x.jpg" alt="Robbery Bob">
+        <h2>Letras con Sentidos</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+1k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029ValN4SEFMqrYkZjPpc0w'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/F725RBH/photo-4933953332251307672-x.jpg" alt="Robbery Bob">
+        <h2>Memes & Frases</h2></h2>
+        <h3>✅ Categoría: Memes</h3>
+        <p>+1.4k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029ValR3Yp4dTnRuVfXKN1e'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/BqNXStj/photo-4933953332251307673-x.jpg" alt="Robbery Bob">
+        <h2>Inefable</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+600</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VagrOl8G3R3p5bx7pg3C'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/wWB92Y1/photo-4933953332251307674-x.jpg" alt="Robbery Bob">
+        <h2>CubaMemes</h2></h2>
+        <h3>✅ Categoría: Memes</h3>
+        <p>+4.2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaubYYr2f3EBvNFoeH3D'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/vLXZD2Z/photo-4933953332251307676-x.jpg" alt="Robbery Bob">
+        <h2>La Tierra de Oz</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+4.7k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vad1ljJJf05YTldxu30e'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/jRfQRxC/photo-4933953332251307677-x.jpg" alt="Robbery Bob">
+        <h2>Novenos Biblioteca</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+4.2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaJ582S1Hsq2LjfqSb2K'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/p25HMML/photo-4933953332251307678-x.jpg" alt="Robbery Bob">
+        <h2>Beyond The Unknown</h2></h2>
+        <h3>✅ Categoría: Curiosidades</h3>
+        <p>+1.4k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VacmqxpADTO8um7BNH31'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/yWVRK9K/photo-4933953332251307679-x.jpg" alt="Robbery Bob">
+        <h2>Sentimientos Enlazados</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+1.2k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaYlJK9BfxoAEqP1NX34'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/Gcqfpyj/photo-4933953332251307680-x.jpg" alt="Robbery Bob">
+        <h2>Metanoia</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+2.8k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaUZ6ybEQIauXpdSlI2k'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/CmKn7ZZ/photo-4933953332251307681-x.jpg" alt="Robbery Bob">
+        <h2>L" Principito</h2></h2>
+        <h3>✅ Categoría: Frases</h3>
+        <p>+4.6k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaapQS6F6sn6Nnt2kC1C'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/C8qyh3T/photo-4933953332251307682-x.jpg" alt="Robbery Bob">
+        <h2>La Escritora</h2></h2>
+        <h3>✅ Categoría: Literatura</h3>
+        <p>+5.3k</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VaPMYyD5vKA6Z0YKKa2M'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/qmTKwrb/photo-4933953332251307683-x.jpg" alt="Robbery Bob">
+        <h2>Frases Videos De todo un Poco</h2></h2>
+        <h3>✅ Categoría: Random</h3>
+        <p>+700</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029Vb005QY4inojZCSCdO3f'">Ver Canal</button>
+    </div>
+        <div class="card">
+        <img src="https://i.ibb.co/7WHss4B/photo-4933953332251307687-x.jpg" alt="Robbery Bob">
+        <h2>Yely's Korean Journey</h2></h2>
+        <h3>✅ Categoría: Educativo</h3>
+        <p>+600</p>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/355/389/small/five-5-star-rank-sign-illustration-free-vector.jpg" alt="Estrellas" style="width: 80px; margin: 0px auto;">
+        <button onclick="window.location.href='https://whatsapp.com/channel/0029VabtT15A2pLH1pXDOr1o'">Ver Canal</button>
+    </div>
+</div>
+    
+<!-- Más motivos para unirte -->
+<h2 class="reasons">Más motivos para unirte</h2>
+<div class="container-reasons">
+    <div class="reason">
+        <h3 class="reason-title">Disfruta del mejor contenido</h3>
+        <p class="reason-subtitle">Compilación de los mejores canales de todo Whatsapp y más.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3159/3159543.png" alt="Icono 1" class="icon">
+    </div>
+    <div class="reason">
+        <h3 class="reason-title">Más de 10 categorías diferentes</h3>
+        <p class="reason-subtitle">Guarda tu contenido favorito y siempre tendrás algo para ver.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/2381/2381981.png" alt="Icono 2" class="icon">
+    </div>
+    <div class="reason">
+        <h3 class="reason-title">Los canales de Whatsapp tienen de todo</h3>
+        <p class="reason-subtitle">Desde música, películas, libros, frases y mucho más.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/18094/18094046.png" alt="Icono 3" class="icon">
+    </div>
+    <div class="reason">
+        <h3 class="reason-title">Perfecto para tus Estados</h3>
+        <p class="reason-subtitle">Si te gusta subir Estados de Whatsapp en estos canales encontrarás la inspiración necesaria.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/1211/1211015.png" alt="Icono 4" class="icon">
+    </div>
+</div>
 
-    <!-- Audience Section -->
-    <section class="audience" id="audiencia">
-        <div class="container">
-            <div class="audience-content">
-                <div class="audience-text">
-                    <h2>Llegamos a Más de 5 Millones de Usuarios</h2>
-                    <p>Nuestra red de contactos en WhatsApp y Telegram nos permite conectar tu marca con una audiencia masiva en América y España. Segmentamos por intereses, ubicación y comportamiento para garantizar que tu mensaje llegue a las personas adecuadas.</p>
-                    
-                    <div class="audience-stats">
-                        <div class="stat">
-                            <div class="stat-number">5M+</div>
-                            <div class="stat-label">Usuarios Activos</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Países</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Tasa de Engagement</div>
-                        </div>
-                    </div>
-                    
-                    <a href="#contacto" class="btn">Quiero Llegar a Esta Audiencia</a>
-                </div>
-                
-                <div class="audience-image">
-                    <!-- Cambia esta URL por tu imagen -->
-                    <img src="https://i.ibb.co/HDm02PD6/photo-4951985091022359384-m.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Sección de Preguntas Frecuentes -->
+<h2 class="reasons">Preguntas frecuentes</h2>
+<div class="faq-container">
+    <div class="faq-item">
+        <button class="faq-question">¿Qué es nuestro catálogo?</button>
+        <div class="faq-answer">Una enorme colección de canales de Whatsapp en crecimiento ya que todos los días agregamos más canales.</div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">¿Dónde puedo ver el catálogo?</button>
+        <div class="faq-answer">Disfruta donde quieras y cuando quieras de nuestro catálogo ya que al ser un sitio web, es compatible con todo tipo de sistemas operativos. </div>
+    </div>
+    <div class="faq-item">
+        <button class="faq-question">¿Qué puedo ver en este catálogo?</button>
+        <div class="faq-answer">La mejor colección de canales de Whatsapp simplemente tocando el botón ver canal que verás debajo de cada tarjeta.</div>
+    </div>
+</div>
 
-    <!-- FAQ Section -->
-    <section id="faq">
-        <div class="container">
-            <h2 class="text-center">Preguntas Frecuentes</h2>
-            <p class="text-center">Resolvemos tus dudas sobre nuestros servicios y cómo podemos ayudarte a crecer.</p>
-            
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        ¿Cómo funciona la publicidad en WhatsApp y Telegram?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Utilizamos nuestras redes de contactos masivas para distribuir tu mensaje publicitario de forma segmentada. Puedes elegir el público objetivo por país, intereses o demografía para maximizar el retorno de inversión.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        ¿Qué incluye el servicio de desarrollo web?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Nuestro servicio de desarrollo web incluye diseño responsive, optimización SEO, integración con redes sociales, formularios de contacto, panel de administración y certificado SSL para seguridad.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        ¿Cuánto tiempo toma desarrollar una aplicación Android?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>El tiempo de desarrollo varía según la complejidad de la aplicación. Una app básica puede tomar entre 4-6 semanas, mientras que aplicaciones más complejas pueden requerir 2-4 meses. Te proporcionamos un cronograma detallado al inicio del proyecto.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        ¿En qué países tienen presencia?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Tenemos cobertura en toda América (México, Colombia, Argentina, Chile, Perú, Ecuador, etc.) y España. Podemos segmentar campañas por país o región específica según tus necesidades.</p>
-                    </div>
-                </div>
-                
-                <div class="faq-item">
-                    <div class="faq-question">
-                        ¿Ofrecen servicios de seguimiento y análisis?
-                        <span class="faq-toggle">+</span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Sí, proporcionamos informes detallados de rendimiento para todas nuestras campañas. Incluimos métricas como alcance, engagement, clics, conversiones y retorno de inversión para que puedas medir el éxito de tu inversión.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="container">
+    <h1 class="title">¡Que comience la diversión!</h1>
+<button class="button" onclick="goToPeliculas()">Solicita que un admin agregue tu Canal ></button>
+</div>
 
-    <!-- CTA Section -->
-    <section class="cta" id="contacto">
-        <div class="container">
-            <h2>¿Listo para Impulsar Tu Negocio?</h2>
-            <p>Contáctanos ahora a través de Telegram y aprovecha nuestro descuento por tiempo limitado. Nuestro equipo está listo para ayudarte a alcanzar tus objetivos.</p>
-            <a href="https://t.me/TheTeacherdeCursos" class="btn" target="_blank">Contactar por Telegram</a>
-        </div>
-    </section>
+<script>
+     document.addEventListener("DOMContentLoaded", function() {
+        const searchInput = document.querySelector(".search-container input");
+        const cards = document.querySelectorAll(".card");
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Agencia Publicidad</h3>
-                    <p>Líder en publicidad digital con alcance a más de 5 millones de usuarios en América y España.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="https://t.me/TheTeacherdeCursos" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Servicios</h3>
-                    <ul class="footer-links">
-                        <li><a href="#servicios">Publicidad Digital</a></li>
-                        <li><a href="#servicios">Desarrollo Web</a></li>
-                        <li><a href="#servicios">Aplicaciones Android</a></li>
-                        <li><a href="#servicios">Posicionamiento SEO</a></li>
-                        <li><a href="#servicios">Venta de Cursos</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul class="footer-links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#audiencia">Audiencia</a></li>
-                        <li><a href="#faq">Preguntas Frecuentes</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Contacto</h3>
-                    <ul class="footer-links"
-                        <li>Teléfono: +1 (829) 720-6225</li>
-                        <li><a href="https://t.me/TheTeacherdeCursos" target="_blank">Telegram: @TheTeacherdeCursos</a></li>
-                        <li><a href="https://wa.me/18297206225" target="_blank">WhatsApp: +1 (829) 720-6225</a></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>© 2020 Agencia de Publicidad. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
+        searchInput.addEventListener("input", function() {
+            const searchText = searchInput.value.toLowerCase();
+            cards.forEach(card => {
+                const title = card.querySelector("h2").textContent.toLowerCase();
+                card.style.display = title.includes(searchText) ? "block" : "none";
+            });
+        });
+    });
+    
+    function goToPeliculas() {
+        window.location.href = 'https://t.me/TheTeacherdeCursos';
+    }
 
-    <script>
-        // Contador de descuento
-        function startCountdown() {
-            const countDownDate = new Date().getTime() + 24 * 60 * 60 * 1000; // 24 horas desde ahora
-            
-            const countdownFunction = setInterval(function() {
-                const now = new Date().getTime();
-                const distance = countDownDate - now;
-                
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-                document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
-                document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
-                document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-                
-                if (distance < 0) {
-                    clearInterval(countdownFunction);
-                    document.getElementById("hours").innerHTML = "00";
-                    document.getElementById("minutes").innerHTML = "00";
-                    document.getElementById("seconds").innerHTML = "00";
-                }
-            }, 1000);
+    function goToServicios() {
+        window.location.href = 'agregar.html';
+    }
+
+// Función para manejar el acordeón
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach((question) => {
+    question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+
+        // Alternar la visibilidad de la respuesta
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
         }
-        
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                const toggle = question.querySelector('.faq-toggle');
-                
-                if (answer.classList.contains('active')) {
-                    answer.classList.remove('active');
-                    toggle.classList.remove('active');
-                } else {
-                    // Cerrar otras respuestas abiertas
-                    document.querySelectorAll('.faq-answer').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    document.querySelectorAll('.faq-toggle').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    
-                    // Abrir la respuesta actual
-                    answer.classList.add('active');
-                    toggle.classList.add('active');
-                }
-            });
-        });
-        
-        // Menú móvil
-        document.querySelector('.mobile-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-menu').classList.toggle('active');
-        });
-        
-        // Cerrar menú al hacer clic en un enlace
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-menu').classList.remove('active');
-            });
-        });
-        
-        // Inicializar contador cuando la página cargue
-        window.onload = function() {
-            startCountdown();
-        };
-    </script>
-</body>
+    });
+});
+</script>
 
+</body>
 </html>
 
 
-
-
-
-
-
+    
